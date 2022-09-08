@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {map, useState} from 'react'
 import {RiCloseCircleLine} from 'react-icons/ri'
 import {TiEdit} from 'react-icons/ti'
 import TodoForm from './TodoForm'
@@ -36,7 +36,7 @@ function Todo(todos, completeTodo, removeTodo, updateTodo) {
                     <TiEdit onClick={() => setEdit(todo.id)}
                         className='Edit-icon' />
                 </div>
-
+        
             </div>
         ));
 }
