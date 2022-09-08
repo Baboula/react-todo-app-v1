@@ -1,4 +1,4 @@
-import React, {userState, useState} from 'react'
+import React, {useState} from 'react'
 
 function TodoForm(props) {
     const [input, setInput]= useState('')
@@ -14,7 +14,7 @@ function TodoForm(props) {
             id: Math.floor(Math.random() * 10000),
             text: input
         });
-        
+
         setInput('');
     };
   return (
