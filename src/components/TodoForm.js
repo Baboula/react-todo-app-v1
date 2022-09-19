@@ -29,15 +29,15 @@ function TodoForm(props) {
             <>
         <input
             type='text'
-            placeholder='Add a todo'
+            placeholder='update your idem'
             value={input}
             name='text'
             className='todo-input'
             onChange={handleChange}
             ref= {inputRef}
         />
-        <button className='todo-button'>
-            Add todo
+        <button className='todo-button edit'>
+            update
         </button> </>
          : 
         (
